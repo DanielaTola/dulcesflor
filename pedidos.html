@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang=es>
+<head>
+  <meta name="viewport" content="width=device-width" maximum-scale=1, minimun-scale=1>
+  <link rel="stylesheet" type="text/css" href="./css/estilos.css"> 
+  <script src="js/funciones.js"></script> 
+  <title>Empresa Dulce Flor</title>
+</head>
+<body>
+  <section class="contenedor">
+    <header class="cabecera">
+      <h1 class="text">EMPRESA DULCES FLOR</h1>
+    </header>
+    <nav class="topnav">
+       <a href="index.html">Inicio</a>
+       <a href="catalogo.html">Catálogo</a>
+       <a href="pedidos.html">Pedidos</a>
+       <a href="info.html">Información</a>
+    </nav>
+
+    <section class="main">
+      <div class="formulario">
+      <form name="frmPedido" action="" method="get" target="_self">
+        <h2 style="text-align: center">DATOS DEL PEDIDO</h2>
+        <label for="nombre">Nombre: </label>
+        <input id="nombre" type="text" name="nombre" size="30"/><br></br>
+
+        <label for="apellido">Apellido: </label>
+        <input id="apellido" type="text" name="apellido" size="30"/><br></br>
+
+        <label for="tel">Número de teléfono:</label>
+        <input id="tel" type="text" name="tel" size="30"/><br><br>
+        
+        <label for="dir">Dirección de entrega: </label> 
+        <input id="dir" type="text" name="dir" size= "30"/><br><br>
+
+        <label for="postres">Elija un postre:</label>
+        <select id= "postres" name = "postres">
+          <option value = "pie">  Pie</option>
+          <option value = "cheescake"> Cheescake</option>
+          <option value = "bocados">  Bocados</option>
+          <option value = "brownie">  Brownie</option>
+          <option value = "tortas">  Tortas</option>
+        </select><br><br>
+        
+        <input type="submit" value="Realizar Pedido" onclick="validarVacios()" />
+        <input type="reset" value="Borrar"/>
+      </form>
+    </div>
+    </section>
+
+
+    <footer class="pie">
+      <div class="piePag">
+        <table>
+            <tr>
+              <td><img src="./Imagenes/IGlogo.jpg" width="50" height="50" /></td>
+              <td align="center">@dulces.flor</td>
+            </tr>
+            <tr>
+              <td><img src="./Imagenes/TLogo.png" width="50" height="50" /></td>
+              <td align="center">0981570531</td>
+            </tr>
+            <tr>
+              <td><img src="./Imagenes/CElogo.jpg" width="50" height="50" /></td>
+              <td align="center">dulcesflor@gmail.com</td>
+            </tr>
+          </table>
+    </div>
+    </footer>
+  </section>
+</body>
+</html> 
